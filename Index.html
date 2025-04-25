@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stalen Deur Prijs Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Stalen Deur Prijs Calculator</h1>
+
+    <form id="priceForm">
+      <label for="height">Hoogte (mm):</label>
+      <input type="number" id="height" required>
+
+      <label for="width">Breedte (mm):</label>
+      <input type="number" id="width" required>
+
+      <label for="liggers">Aantal horizontale liggers:</label>
+      <input type="number" id="liggers" value="2" required>
+
+      <label for="profile">Profiel:</label>
+      <select id="profile" required>
+        <option value="40x10">40x10x2</option>
+        <option value="40x15">40x15x2</option>
+      </select>
+
+      <button type="button" onclick="calculatePrice()">Bereken Prijs</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
